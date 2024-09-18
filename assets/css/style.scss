@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.container{
+    max-width: 1060px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+.main{
+    background-image: url(../img/HERO.svg);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    &__title{
+        position: relative;
+        z-index: 3;
+        top: 280px;
+        left: 210px;
+    }
+    &__text{
+        font-size: 56px;
+        color: #fff;
+        font-weight: 900;
+    }
+    &__btn{
+        margin-top: 57px;
+        width: 210px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: #F2726F;
+        font-size: 12px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+.about{
+    background-color: #f5f5f5;
+    z-index: -2;
+    &__text{
+        z-index: 3;
+        position: absolute;
+        &-annotation{
+            position: relative;
+            left: 500px;
+            top: 80px;
+        }
+        &-title{
+            position: relative;
+            font-size: 36px;
+            color: #fff;
+            left: 500px;
+            top: 100px;
+            font-weight: 900;
+        }
+        &-paragraph{
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            left: 500px;
+            top: 130px;
+            font-weight: 400;
+        }
+    }
+    &__img{
+        height: 700px;
+        background-color: #5D62B5;
+        border-radius: 40px;
+        margin-top: -80px;
+        position: relative;
+        left: 400px;
+    }
+    &__dots{
+        position: absolute;
+        top: -110px;
+        right: -70px;
+
+    }
+    &__dog{
+        border-radius: 40px;
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%) ;
+        bottom: -120px;
+        z-index: 1;
+    }
+    &__blob{
+        position: absolute;
+        bottom: -160px;
+    }
+}
+.advantage{
+    background-color: #f5f5f5;
+    z-index: -2;
+    padding-top: 300px;
+    position: relative;
+    &__text{
+        &-annotation{
+           position:absolute;
+           left: 400px;
+           top: 170px; 
+           z-index: 3;
+        }
+        &-title{
+            position: absolute;
+            left: 400px;
+            top: 230px;
+            font-size: 36px;
+            font-weight: 900;
+        }
+        &-cards{
+            display: flex;
+            position: relative;
+            left: 400px;
+            &-img{
+                position: relative;
+                left: -80px;
+                top: 60px;
+            }
+            &-love-overtitle{
+                color: #F2726F;
+                font-weight: 900;
+                font-size: 19px;
+            }
+            &-vet-overtitle{
+                color: #F2726F;
+                font-weight: 900;
+                font-size: 19px;
+            }
+            &-stream-overtitle{
+                color: #F2726F;
+                font-weight: 900;
+                font-size: 19px;
+            }
+        }
+    }
+}
+.pup{
+    background-color: #f5f5f5;
+    &__title{
+        position: relative;
+        font-size: 36px;
+        color: #fff;
+        z-index: 3;
+        left: 1200px;
+        top: 340px;
+    }
+    &__btn{
+        position: relative;
+        width: 210px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: #F2726F;
+        font-size: 12px;
+        color: #fff;
+        left: 1200px;
+        top: 420px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    &__img{
+        position: relative;
+        display: flex;
+        background-color: #29C3BE;
+        width: 1740px;
+        height: 500px;
+        z-index: 2;
+        left: 100px;
+        &_dog{
+            z-index: 3;
+        }
+        &_blob{
+            position: absolute;
+            top: 265px;
+        }
+        &_circles{
+            position: absolute;
+            left: 10px;
+            top: 90px;
+            z-index: 1;
+        }
+        &_blob1{
+            position: absolute;
+            z-index: 2;
+        }
+        &_ball{
+            position: absolute;
+            top: 190px;
+            left: 1650px;
+            z-index: 2;
+        }
+    }
+}
